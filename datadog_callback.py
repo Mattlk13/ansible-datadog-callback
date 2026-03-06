@@ -30,7 +30,12 @@ DEFAULT_DD_URL = "https://api.datadoghq.com"
 
 
 class CallbackModule(CallbackBase):
+    CALLBACK_VERSION = 2.0
+    CALLBACK_TYPE = 'aggregate'
+    CALLBACK_NAME = 'datadog_callback'
+
     def __init__(self):
+        super(CallbackModule, self).__init__()
         if IMPORT_ERROR is not None:
             self.disabled = True
             print(
@@ -314,7 +319,7 @@ class CallbackModule(CallbackBase):
                 event_type='start',
             )
 
-    def playbook_on_stats(self, stats):
+    def v2_playbook_on_stats(self, stats):
         total_tasks = 0
         total_updated = 0
         total_errors = 0
