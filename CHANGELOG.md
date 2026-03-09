@@ -81,6 +81,8 @@ First release, compatible with Ansible v1 & v2
 [#65]: https://github.com/DataDog/ansible-datadog-callback/issues/65
 [#68]: https://github.com/DataDog/ansible-datadog-callback/issues/68
 [#70]: https://github.com/DataDog/ansible-datadog-callback/issues/70
+[#78]: https://github.com/DataDog/ansible-datadog-callback/issues/78
+[#86]: https://github.com/DataDog/ansible-datadog-callback/issues/86
 [@DSpeichert]: https://github.com/DSpeichert
 [@brandonshough]: https://github.com/brandonshough
 [@dobber]: https://github.com/dobber
