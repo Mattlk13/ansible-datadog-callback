@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+# 2.8.2 / 2026-03-09
+
+* [BUGFIX] Fix compatibility with Ansible 2.18+: call `super().__init__()` in `__init__`, rename `playbook_on_stats` to `v2_playbook_on_stats`, and add required callback metadata [#86][]
+* [BUGFIX] Fix module name reporting in task events [#78][]
+
 # 2.8.1 / 2024-04-05
 
 * [BUGFIX] Fix `import name 'cli' from '__main__' error [#70][] (Thanks [@tcaddy][])
@@ -76,6 +81,8 @@ First release, compatible with Ansible v1 & v2
 [#65]: https://github.com/DataDog/ansible-datadog-callback/issues/65
 [#68]: https://github.com/DataDog/ansible-datadog-callback/issues/68
 [#70]: https://github.com/DataDog/ansible-datadog-callback/issues/70
+[#78]: https://github.com/DataDog/ansible-datadog-callback/issues/78
+[#86]: https://github.com/DataDog/ansible-datadog-callback/issues/86
 [@DSpeichert]: https://github.com/DSpeichert
 [@brandonshough]: https://github.com/brandonshough
 [@dobber]: https://github.com/dobber
